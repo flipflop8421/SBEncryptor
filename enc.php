@@ -2,7 +2,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>Vaeb's SB Encryptor</title>
+		<title>Vaeb's SEAL</title>
 		<meta name="description" content="Web Portfolio">
 		<meta name="author" content="Adam Johnson" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, user-scalable=yes">
@@ -55,7 +55,7 @@
 
 	<body>
 		<form id="SearchForm" action="enc.php" method="post">
-			<h3>Vaeb's Script Loader</h3>
+			<h3>Vaeb's Script Encryptor And Loader (Vaeb's SEAL)</h3>
 			<p>Instructions: <a href="http://prntscr.com/apbu3g">http://prntscr.com/apbu3g</a></p>
 			<p>Security: <a href="http://prntscr.com/apct35">http://prntscr.com/apct35</a></p>
 			<textarea name="source" class="SearchBox" placeholder="Insert Code Here" rows="10" cols="150" required></textarea><br/><br/>
