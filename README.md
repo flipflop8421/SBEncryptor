@@ -1,4 +1,5 @@
 -Creator: Vaeb (flipflop8421)-
+
 Note: Is used in your own site then please give me (Vaeb) credit.
 
 Original: http://www.ajohnsonnetwork.com/enc.php
