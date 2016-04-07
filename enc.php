@@ -2,11 +2,10 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>Vaeb</title>
+		<title>Creator: Vaeb</title>
 		<meta name="description" content="Web Portfolio">
 		<meta name="author" content="Adam Johnson" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, user-scalable=yes">
-		<link rel="shortcut icon" href="Images/ANLogoIcon.png">
 
 		<style type="text/css">
 
