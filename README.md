@@ -4,6 +4,8 @@ Note: Is used in your own site then please give me (Vaeb) credit.
 
 Original: http://www.ajohnsonnetwork.com/enc.php
 
+-----------------------------------------------------------------------------------------------
+
 INSTRUCTIONS:
 
 
