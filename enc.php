@@ -263,13 +263,13 @@ end)';
 					$EncVals = encrypt($source);
 					$finalText = $DecryptionCode1 . $isServer . $DecryptionCode2 . $EncVals[0] . $DecryptionCode3;
 
-					$api_dev_key = "3ae897454c06f907b8f13455f52658cb";
+					$api_dev_key = "YourDevKeyHere";
 					$api_paste_code = $finalText;
 					$api_paste_private = "1";
 					$api_paste_name = "generated";
 					$api_paste_expire_date = "10M";
 					$api_paste_format = "Lua";
-					$api_user_key = "c25ea7f575b575088316e0b26b728fd0";
+					$api_user_key = "YourUserKeyHere";
 					$api_paste_name = urlencode($api_paste_name);
 					$api_paste_code = urlencode($api_paste_code);
 
