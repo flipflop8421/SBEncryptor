@@ -2,7 +2,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>Creator: Vaeb</title>
+		<title>Vaeb's SB Encryptor</title>
 		<meta name="description" content="Web Portfolio">
 		<meta name="author" content="Adam Johnson" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, user-scalable=yes">
@@ -57,6 +57,7 @@
 		<form id="SearchForm" action="enc.php" method="post">
 			<h3>Vaeb's Script Loader</h3>
 			<p>Instructions: <a href="http://prntscr.com/apbu3g">http://prntscr.com/apbu3g</a></p>
+			<p>Security: <a href="http://prntscr.com/apct35">http://prntscr.com/apct35</a></p>
 			<textarea name="source" class="SearchBox" placeholder="Insert Code Here" rows="10" cols="150" required></textarea><br/><br/>
 			<span id="span2">Server Side: </span><input name="server" type="checkbox" class="SearchBox" id="input2"/><br/>
 			<span id="span3">Password: </span><input name="pass" type="text" class="SearchBox" id="input3" placeholder="Password" required/><br/>
@@ -262,13 +263,13 @@ end)';
 					$EncVals = encrypt($source);
 					$finalText = $DecryptionCode1 . $isServer . $DecryptionCode2 . $EncVals[0] . $DecryptionCode3;
 
-					$api_dev_key = "YourDevKeyHere";
+					$api_dev_key = "EnterDevKey";
 					$api_paste_code = $finalText;
 					$api_paste_private = "1";
 					$api_paste_name = "generated";
 					$api_paste_expire_date = "10M";
 					$api_paste_format = "Lua";
-					$api_user_key = "YourUserKeyHere";
+					$api_user_key = "EnterUserKey";
 					$api_paste_name = urlencode($api_paste_name);
 					$api_paste_code = urlencode($api_paste_code);
 
@@ -300,9 +301,21 @@ end)';
 					$newsource = str_replace("http://pastebin.com/", "http://pastebin.com/raw/", $newsource);
 					$newkey = str_replace("http://pastebin.com/", "", $newkey);
 
-					echo "<b>Raw Script:</b> <a href=" . $newsource . ">" . $newsource . "</a>";
+					echo "<b>Raw Script URL:</b> <a href=" . $newsource . ">" . $newsource . "</a>";
 					echo "<br/><br/>";
 					echo "<b>Keyword:</b> " . strtolower($newkey);
+
+					echo "<br/><br/><hr/><br/><br/><b>Instructions:</b><br/><br/>";
+
+					echo "1. Run the Raw Script URL (the one that's just been generated) locally in SB (you must ALWAYS run it client side, regardless of your script's type)";
+					echo "<br/><br/>";
+					echo "2. Next press each character in the Keyword (the one that's just been generated) using your keyboard (You don't enter the characters into a GUI or into the chat, you just press them on your keyboard)";
+					echo "<br/>";
+					echo "(The Raw Script URL you ran should detect your key presses and print in your output 'Added Character to KeyWord' on each key press)";
+					echo "<br/>";
+					echo "(Press backspace to reset entering the characters)";
+					echo "<br/><br/>";
+					echo "3. Once you've finished pressing the characters, press enter to confirm/run";
 
 				} else {
 					echo "ERROR: Incorrect Password";
