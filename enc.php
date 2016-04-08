@@ -9,8 +9,19 @@
 
 		<style type="text/css">
 
+
+			@font-face{
+				font-family:Brandon;
+				src:url(WebFonts/Brandon_reg.otf);
+				font-style:normal;
+			}
+
 			html, body {
 				margin: 6px 10px;
+				font-family:Brandon,serif;
+				font-size:16px;
+				font-style:"normal";
+				font-weight: 500;
 			}
 
 			.SearchBox {
@@ -55,9 +66,9 @@
 
 	<body>
 		<form id="SearchForm" action="enc.php" method="post">
-			<h3>Vaeb's Script Encrypter And Loader (Vaeb's SEAL)</h3>
-			<p>Instructions: <a href="http://prntscr.com/apbu3g">http://prntscr.com/apbu3g</a></p>
-			<p>Security: <a href="http://prntscr.com/apct35">http://prntscr.com/apct35</a></p>
+			<h3>Vaeb's Script Encrypter And Loader [SEAL]</h3>
+			<p>Instructions: <a href="http://prntscr.com/ape5d0">http://prntscr.com/ape5d0</a></p>
+			<p>Security: <a href="http://prntscr.com/apmwzu">http://prntscr.com/apmwzu</a></p>
 			<textarea name="source" class="SearchBox" placeholder="Insert Code Here" rows="10" cols="150" required></textarea><br/><br/>
 			<span id="span2">Server Side: </span><input name="server" type="checkbox" class="SearchBox" id="input2"/><br/>
 			<span id="span3">Password: </span><input name="pass" type="text" class="SearchBox" id="input3" placeholder="Password" required/><br/>
@@ -263,13 +274,13 @@ end)';
 					$EncVals = encrypt($source);
 					$finalText = $DecryptionCode1 . $isServer . $DecryptionCode2 . $EncVals[0] . $DecryptionCode3;
 
-					$api_dev_key = "EnterDevKey";
+					$api_dev_key = "";
 					$api_paste_code = $finalText;
 					$api_paste_private = "1";
 					$api_paste_name = "generated";
 					$api_paste_expire_date = "10M";
 					$api_paste_format = "Lua";
-					$api_user_key = "EnterUserKey";
+					$api_user_key = "";
 					$api_paste_name = urlencode($api_paste_name);
 					$api_paste_code = urlencode($api_paste_code);
 
